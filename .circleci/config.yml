@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker/docker
+    working_directory: /go/src/github.com/tim15/wiz
+    steps:
+      - setup_remote_docker
+      - docker run -
